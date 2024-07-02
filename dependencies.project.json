@@ -1,0 +1,9 @@
+{
+  "name": "dependencies",
+  "tree": {
+    "cameldebris": {
+      "$path": "cameldebris"
+    },
+    "$path": "Packages"
+  }
+}
