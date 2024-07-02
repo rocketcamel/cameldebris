@@ -1,0 +1,22 @@
+name: publish to wally
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup-aftman
+        uses: ok-nick/setup-aftman@v0.4.2
+
+      - name: auth wally
+        run: |
+          wally login --token ${{secrets.GH_TOKEN}}
+
+      - name: publish to wally
+        run: |
+          wally publish

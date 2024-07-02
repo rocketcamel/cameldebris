@@ -1,7 +1,7 @@
 [package]
 name = "rocketcamel/cameldebris"
 description = "A very simple alternative to debris service that uses promises to schedule deletion of an instance after a certain amount of time."
-version = "1.0.0"
+version = "1.0.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 authors = ["rocketcamel"]
